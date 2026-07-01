@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Post | DevBlog</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-feather-pointed"></i>
+
+            <h2>DevBlog</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="create.html">Create Post</a></li>
+
+            <li><a href="myposts.html">My Posts</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="create-section">
+
+    <div class="create-card">
+
+        <h1>Edit Blog</h1>
+
+        <p>Update your article.</p>
+
+        <form id="editForm">
+
+            <div class="input-group">
+
+                <label>Title</label>
+
+                <input
+                    type="text"
+                    id="title"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Author</label>
+
+                <input
+                    type="text"
+                    id="author"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option>Web Development</option>
+
+                    <option>JavaScript</option>
+
+                    <option>React</option>
+
+                    <option>MongoDB</option>
+
+                    <option>Programming</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Image URL</label>
+
+                <input
+                    type="text"
+                    id="image"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Description</label>
+
+                <textarea
+                    id="description"
+                    rows="8"
+                    required></textarea>
+
+            </div>
+
+            <button
+                class="publish-btn">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Update Post
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<div id="toast"></div>
+<script src="js/edit.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>

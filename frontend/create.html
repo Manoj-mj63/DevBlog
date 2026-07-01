@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Post | DevBlog</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h2>DevBlog</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#">Categories</a></li>
+
+                <li><a href="myposts.html">My Posts</a></li>
+
+                <li>
+                    <a href="create.html" class="create-btn active">
+                        Create Post
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-regular fa-moon"></i>
+
+                <img src="images/profile.jpg" alt="Profile">
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= CREATE POST ================= -->
+
+    <section class="create-section">
+
+        <div class="create-card">
+
+            <h1>Create New Blog</h1>
+
+            <p>
+                Share your knowledge with developers around the world.
+            </p>
+
+            <form id="postForm">
+
+                <div class="input-group">
+
+                    <label>Title</label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter blog title"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Author</label>
+
+                    <input
+                        type="text"
+                        id="author"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Category</label>
+
+                    <select id="category" required>
+
+                        <option value="">Select Category</option>
+                        <option>Web Development</option>
+                        <option>JavaScript</option>
+                        <option>React</option>
+                        <option>Node.js</option>
+                        <option>MongoDB</option>
+                        <option>Programming</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Image URL</label>
+
+                    <input
+                        type="text"
+                        id="image"
+                        placeholder="Paste image URL"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Description</label>
+
+                    <textarea
+                        id="description"
+                        rows="8"
+                        placeholder="Write your blog..."
+                        required></textarea>
+
+                </div>
+
+                <button type="submit" class="publish-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Publish Post
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <div id="toast"></div>
+    <script src="js/theme.js"></script>
+    <script src="js/create.js"></script>
+    <script src="js/toast.js"></script>
+
+</body>
+
+</html>

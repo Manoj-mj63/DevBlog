@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevBlog</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div id="loader">
+
+    <div class="spinner"></div>
+
+    <p>Loading DevBlog...</p>
+
+</div>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h2>DevBlog</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#index.html" class="active">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="myposts.html">My Posts</a></li>
+                <li><a href="create.html" class="create-btn">Create Post</a></li>
+
+            </ul>
+<button id="themeToggle" class="theme-btn">
+
+    🌙
+
+</button>
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-regular fa-moon"></i>
+
+                <i class="fa-solid fa-user-circle"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                Welcome to DevBlog
+            </span>
+
+            <h1>
+
+                Share Your Knowledge.<br>
+                Inspire Developers Worldwide.
+
+            </h1>
+
+            <p>
+
+                Discover programming tutorials, web development tips,
+                JavaScript tricks, and inspiring stories from developers
+                across the globe.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="create.html" class="primary-btn">
+
+                    Create Post
+
+                </a>
+
+                <a href="#latest-posts" class="secondary-btn">
+
+                    Explore Posts
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search blog posts...">
+
+        </div>
+
+      <select id="categoryFilter">
+
+    <option value="All">All Categories</option>
+
+    <option value="Web Development">Web Development</option>
+
+    <option value="JavaScript">JavaScript</option>
+
+    <option value="React">React</option>
+
+    <option value="Node.js">Node.js</option>
+
+    <option value="MongoDB">MongoDB</option>
+
+    <option value="Programming">Programming</option>
+
+</select>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <!-- LEFT -->
+
+        <section class="content-area">
+
+    <div class="section-header">
+
+        <h2 class="section-title">
+
+            Latest Articles
+
+        </h2>
+
+        <a href="#" class="view-all">
+
+            View All →
+
+        </a>
+
+    </div>
+
+    <div class="posts-grid" id="postsContainer">
+        <!-- Blog cards -->
+    </div>
+
+</section>
+
+        <!-- RIGHT -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-card">
+
+                <h3>
+
+                    Categories
+
+                </h3>
+
+                <ul id="categoryList">
+
+                </ul>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <h3>
+
+                    Popular Posts
+
+                </h3>
+
+                <div id="popularPosts">
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <h3>
+
+                    About DevBlog
+
+                </h3>
+
+                <p>
+
+                    A modern blogging platform where developers share
+                    tutorials, experiences and ideas.
+
+                </p>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+
+                DevBlog
+
+            </h2>
+
+            <p>
+
+                Share. Learn. Grow.
+
+            </p>
+
+            <div class="socials">
+
+                <i class="fab fa-github"></i>
+
+                <i class="fab fa-linkedin"></i>
+
+                <i class="fab fa-twitter"></i>
+
+                <i class="fab fa-instagram"></i>
+
+            </div>
+
+            <small>
+
+                © 2026 DevBlog. All Rights Reserved.
+
+            </small>
+
+        </div>
+
+    </footer>
+<div id="toast"></div>
+<script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/toast.js"></script>
+
+</body>
+
+</html>
