@@ -18,7 +18,7 @@ async function loadMyPosts() {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/posts/author/${author}`);
+        const response = await fetch(`http://devblog-n9zh.onrender.com/api/posts/author/${author}`);
 
         const posts = await response.json();
 
@@ -125,7 +125,7 @@ async function deletePost(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/posts/${id}`, {
+        const response = await fetch(`http://devblog-n9zh.onrender.com/api/posts/${id}`, {
 
             method: "DELETE"
 

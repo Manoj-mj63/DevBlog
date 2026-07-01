@@ -133,7 +133,7 @@ async function loadPosts() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/posts");
+        const response = await fetch("http://devblog-n9zh.onrender.com/api/posts");
 
         allPosts = await response.json();
 

@@ -26,7 +26,7 @@ async function loadPost() {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/posts/${postId}`);
+        const response = await fetch(`http://devblog-n9zh.onrender.com/api/posts/${postId}`);
 
         const post = await response.json();
 
@@ -66,7 +66,7 @@ form.addEventListener("submit", async (e) => {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/posts/${postId}`, {
+        const response = await fetch(`http://devblog-n9zh.onrender.com/api/posts/${postId}`, {
 
             method: "PUT",
 
