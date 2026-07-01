@@ -16,7 +16,7 @@ async function loadPost() {
 
     try {
 
-        const response = await fetch(`http://devblog-n9zh.onrender.com/api/posts/${postId}`);
+        const response = await fetch(`https://devblog-n9zh.onrender.com/api/posts/${postId}`);
 
         const post = await response.json();
 

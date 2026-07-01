@@ -133,7 +133,7 @@ async function loadPosts() {
 
     try {
 
-        const response = await fetch("http://devblog-n9zh.onrender.com/api/posts");
+        const response = await fetch("https://devblog-n9zh.onrender.com/api/posts");
 
         allPosts = await response.json();
 
